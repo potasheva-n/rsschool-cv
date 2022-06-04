@@ -17,6 +17,16 @@ I am eager to grow and further improve my IT skills.
   * CSS
   * JavaScript ES5/ES6
   * Git
+### Code Example
+  ```
+  //Codewars https://www.codewars.com/kata/square-every-digit
+  
+  function squareDigits(num){
+      let arr=String(num).split('');
+      arr.forEach( (item, i, arr) => { arr[i] = Math.pow(Number(item),2);});
+      return Number(arr.join(''));
+  }
+```
 
 ### Career Summary
   * __Practice in 1C__, Unichel (June 2014 - Jule 2014)
