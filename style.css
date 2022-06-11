@@ -1,1 +1,144 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 55%;
+  min-width: min-content;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background: linear-gradient(45deg, #aad3d3, #f3f1c2);
+  list-style-image: url(./assets/img/leaf.png);
+  color: #2F4F4F;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  color:#027272;
+}
+
+blockquote {
+  color:#008080;
+  font-weight: 500;
+  font-style: italic;
+  margin-inline-start: 0px;
+}
+
+a {
+  color:#2F4F4F;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+a:hover {
+  color: #a88cc7;
+}
+
+.flex-wrap {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-style: double;
+  border-color: #00808046;
+  border-width: 6px;
+  box-shadow: 0px 24px 26px -15px rgba(22,75,87,0.81);
+}
+
+.column {
+  padding: 50px 35px 10px 65px;
+}
+
+.bg-column {
+  /*background-image: url(./feather.png);
+  background-repeat: no-repeat;
+  background-position: 65px 695px;
+  background-size: 200px auto;*/
+
+  background-image: url(./assets/img/pot.png);
+  background-repeat: no-repeat;
+  background-position: 40px 730px;
+  background-size: 280px auto;
+}
+
+.section pre{
+  overflow: auto;
+}
+
+.section-header {
+  color: #008080;
+  font-size: 1.2rem;
+}
+
+.list-item {
+  position: relative;
+  top: -20px;
+  display: block;
+  margin: 0;
+}
+
+/*markers looks bad in mozilla without this IDK how to fix in other way*/
+@-moz-document url-prefix() {
+   .list-item{
+     line-height: 56px;
+   }
+}
+
+#rss-logo {
+  width: 120px;
+}
+
+#photo {
+  border-radius: 100px;
+  border-image-source: url(./assets/img/green-and-fresh-grass-ring-bird-decoration-pattern-980ff6b0b0989f3e544ab98b12c4dbbb.png);
+  border-image-slice: 0% fill;
+  border-image-outset: 25px;
+}
+
+nav {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+
+nav a {
+  display: block;
+  margin: auto;
+}
+
+@media(max-width: 1520px){
+  .flex-wrap{
+    flex-flow: column;
+  }
+  body{
+    min-width: 0px;
+  }
+  .bg-column {
+    background:none;
+  }
+}
+
+@media(max-width: 600px){
+  body{
+    width: auto;
+    word-wrap: break-word;
+  }
+  nav {
+    flex-flow: column;
+  }
+}
+
+@media(max-width: 240px){
+  body{
+    font-size: 0.8em;
+  }
+  #photo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+
 
